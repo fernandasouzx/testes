@@ -38,7 +38,7 @@ source .venv/bin/activate  # No Windows: .venv\Scripts\activate
 # Instala dependências
 pip install python-dotenv supabase openai
 
-# Executa o módulo (exemplo com uvicorn, adaptável para script)
+# Executa o módulo 
 uvicorn main:app --reload  # Assumindo integração em app FastAPI; para script standalone, use python script.py
 ```
 
