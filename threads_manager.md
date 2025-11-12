@@ -1,4 +1,4 @@
-# Documentação — ThreadManager
+# Documentação - ThreadManager
 
 ## Visão Geral
 
