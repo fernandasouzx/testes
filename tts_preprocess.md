@@ -1,4 +1,4 @@
-# Documentação — Pré-processamento de Texto para TTS
+# Documentação - Pré-processamento de Texto para TTS
 
 ## Visão Geral
 
