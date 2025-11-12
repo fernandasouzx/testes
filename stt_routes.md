@@ -1,4 +1,4 @@
-# Documentação — Rota de Transcrição de Áudio (STT)
+# Documentação - Rota de Transcrição de Áudio (STT)
 
 ## Visão Geral
 
