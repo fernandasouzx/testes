@@ -1,4 +1,4 @@
-# Documentação — Rota de Síntese de Fala (TTS)
+# Documentação - Rota de Síntese de Fala (TTS)
 
 ## Visão Geral
 
