@@ -1,4 +1,5 @@
-# Documentação - Pré-processamento STT
+# Documentação - Pré-processamento de Texto para STT
+
 
 ## Visão Geral
 O módulo `preprocess_speech.py` define funções utilitárias para o **pré-processamento de arquivos de áudio**.
