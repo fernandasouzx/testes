@@ -54,7 +54,7 @@ Os áudios gerados são **temporários**, enviados ao cliente e **removidos apó
 |------|------------|--------------|----------|
 | `OPENAI_API_KEY` | Chave da API da OpenAI | ✅ | `sk-xxxx` |
 | `ELEVENLABS_API_KEY` | Chave da API da ElevenLabs | ❌ | `elev-xxxx` |
-| `VOICE_ID` | ID da voz configurada na ElevenLabs | ❌ | `pNInz6obpgDQGcFmaJgB` |
+| `VOICE_ID` | ID da voz configurada na ElevenLabs | ❌ | `xxxxxxxxxxxxxxxxxxxx` |
 
 > Se as variáveis `ELEVENLABS_API_KEY` e `VOICE_ID` não estiverem definidas, o sistema utilizará **somente o TTS da OpenAI**.
 
