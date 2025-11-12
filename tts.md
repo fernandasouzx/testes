@@ -61,6 +61,7 @@ Os áudios gerados são **temporários**, enviados ao cliente e **removidos apó
 ---
 
 ## Estrutura do Módulo
+```text
 tts_routes.py
 ├── create_tts_routes() # Função principal que cria o roteador FastAPI
 │ └── /tts (POST) # Endpoint para geração de áudio TTS
@@ -68,8 +69,7 @@ tts_routes.py
 │ ├── Tenta ElevenLabs
 │ ├── Fallback para OpenAI
 │ └── Retorna MP3 e limpa arquivo
-
-
+```
 ---
 
 ## Endpoint `/tts`
@@ -103,3 +103,11 @@ curl -X POST "http://localhost:8000/tts" \
   -F "text=Olá, este é um teste de voz!" \
   -o "voz.mp3"
 ```
+## Limpeza de Arquivos Temporários
+Os arquivos .mp3 gerados são armazenados em `tts/audios_tts/` e excluídos automaticamente após o envio ao cliente, utilizando BackgroundTasks do FastAPI.
+
+## Tratamento de Erros
+
+- Falha na ElevenLabs: o sistema exibe aviso no log e ativa o fallback da OpenAI.
+- Erro de processamento ou API: é levantada uma exceção HTTPException(status_code=500, detail="TTS error: ...").
+- Falha de pré-processamento: retorna erro 400 com mensagem "O pré-processamento do texto falhou e não retornou nada.".
