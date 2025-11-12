@@ -76,51 +76,7 @@ replace_text.py
 │ ├── replace_whole_word() # Substitui palavra inteira via regex
 │ └── change_dict() # Atualiza dicionário dinamicamente
 ```
-
 ---
-
-## Classe `ReplaceText`
-
-### Método `__init__`
-
-**Assinatura:** `__init__(self, file_path: str)`
-
-#### Parâmetros
-
-| Nome | Tipo | Obrigatório | Descrição |
-|------|------|--------------|------------|
-| `file_path` | `str` | ✅ | Caminho para o arquivo CSV de mapeamentos |
-
-### Método `replace_word`
-
-**Assinatura:** `replace_word(self, text: str) -> str`
-
-#### Parâmetros
-
-| Nome | Tipo | Obrigatório | Descrição |
-|------|------|--------------|------------|
-| `text` | `str` | ✅ | Texto a ser processado |
-
-#### Retorno
-
-- `str`: Texto com substituições aplicadas.
-
-### Método `change_dict`
-
-**Assinatura:** `change_dict(self, find: str, replace: str) -> Dict[str, str]`
-
-#### Parâmetros
-
-| Nome | Tipo | Obrigatório | Descrição |
-|------|------|--------------|------------|
-| `find` | `str` | ✅ | Palavra a ser substituída |
-| `replace` | `str` | ✅ | Palavra substituta |
-
-#### Retorno
-
-- `Dict[str, str]`: Dicionário de mapeamentos atualizado.
-
-
 ## Tratamento de Erros
 
 - **Erro ao carregar CSV:** Registra erro via logging e levanta exceção.
