@@ -1,4 +1,4 @@
-# Documentação - Rota de Síntese de Fala (TTS)
+# Documentação — Rota de Síntese de Fala (TTS)
 
 ## Visão Geral
 
@@ -47,6 +47,27 @@ Os áudios gerados são **temporários**, enviados ao cliente e **removidos apó
 | **Pré-processamento** | `utils.tts_preprocess.preprocess_text` | Limpeza e tratamento textual antes da síntese |
 
 ---
+# Instalação de Dependências
+## 1. Criar e Ativar Ambiente Virtual
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+## 2. Instalar Dependências
+```bash
+pip install fastapi uvicorn openai requests python-dotenv assemblyai elevenlabs
+```
+> Ou, se preferir usar um arquivo requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Executar o Servidor
+```bash
+uvicorn app:app --reload
+```
 
 ## Variáveis de Ambiente
 
