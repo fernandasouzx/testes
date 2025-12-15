@@ -88,10 +88,10 @@ Para utilizar o TTS da ElevenLabs, é necessário obter o **ID da voz** desejada
 
 1. Acesse o dashboard da ElevenLabs e vá até a seção de vozes.
 2. No painel lateral direito, utilize o campo de busca para encontrar a voz desejada.
-![Menu de vozes da ElevenLabs](/imagens/image.jpeg)
+![Menu de vozes da ElevenLabs](imagens/image.jpeg)
 
 3. Após selecionar a voz, clique nos **três pontos** ao lado do nome da voz.
-![Busca de voz na ElevenLabs](/imagens/image2.jpeg)
+![Busca de voz na ElevenLabs](imagens/image2.jpeg)
 4. Copie o **Voice ID** exibido no menu.
 5. Defina o ID copiado no arquivo `.env`:
 ```bash
